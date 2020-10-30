@@ -1,0 +1,27 @@
+<div class="card">
+  <div class="card-header">Interested Persons List</div>
+  <div class="card-body">
+    <div class="table-responsive">
+      <table class="table">
+        <thead>
+          <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Email</th>
+            <th>Activity</th>
+            <th>Comments</th>            
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let interestedPerson of interestedPersons">
+            <td>{{interestedPerson.firstName}}</td>
+            <td>{{interestedPerson.lastName}}</td>
+            <td>{{interestedPerson.email}}</td>
+            <td>{{activityTypes[interestedPerson.activityTypeId]}}</td>
+            <td>{{interestedPerson.comments}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
